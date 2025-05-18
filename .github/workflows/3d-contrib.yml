@@ -2,8 +2,8 @@ name: Generate 3D Contributions
 
 on:
   schedule:
-    # setiap hari pukul 00:00 UTC, kamu bisa sesuaikan cron-nya
-    - cron:  '0 0 * * *'
+    # setiap hari pukul 12:48 WIB → 05:48 UTC
+    - cron: '48 5 * * *'
   workflow_dispatch:
 
 jobs:
