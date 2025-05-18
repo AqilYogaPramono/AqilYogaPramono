@@ -58,7 +58,7 @@ Here are some of my key repositories:
       API to app mobile ResepKita
     </td>
   </tr>
-  <tr>
+  <tr align="center">
     <td align="center">
       <a href="https://github.com/AqilYogaPramono/ResepKita-AI">
         <img src="https://img.shields.io/badge/ResepKita-AI-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
