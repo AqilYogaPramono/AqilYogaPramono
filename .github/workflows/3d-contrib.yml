@@ -1,0 +1,45 @@
+name: Generate 3D Contributions
+
+on:
+  schedule:
+    # setiap hari pukul 00:00 UTC, kamu bisa sesuaikan cron-nya
+    - cron:  '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Generate 3D contributions image
+        uses: liilr/github-profile-3d-contrib@v1
+        with:
+          # username GitHub-mu
+          username: ${{ github.actor }}
+          # output file path, relatif terhadap root repo
+          output: assets/3d-contrib.png
+          # pilihan tema, misal: night, forest, red, blue, dll.
+          theme: night-green
+          # ukuran kubus (pixel)
+          cube-size: 12
+          # jarak antar kubus
+          cube-gap: 2
+          # rotasi sudut (derajat) untuk view 3D
+          rotate-x: 60
+          rotate-y: 30
+          # resolusi output (lebar x tinggi)
+          width: 1024
+          height: 256
+          # format: png atau jpg
+          format: png
+
+      - name: Commit generated image
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add assets/3d-contrib.png
+          git commit -m "chore: update 3D contributions image" || echo "No changes to commit"
+          git push
