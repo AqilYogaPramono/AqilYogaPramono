@@ -42,6 +42,7 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 
 Here are some of my key repositories:
 
+<p align="center">
 <table>
   <tr>
     <td align="center">
@@ -67,6 +68,7 @@ Here are some of my key repositories:
     <td></td>
   </tr>
 </table>
+</p>
 
 ---
 
