@@ -1,4 +1,4 @@
-name: GitHub-Profile-3D-Contrib
+name: Generate 3D Contributions
 
 on:
   schedule:
@@ -16,17 +16,17 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repo
         uses: actions/checkout@v4
 
-      - name: Ensure asset directory exists
-        run: mkdir -p profile-3d-contrib
+      - name: Ensure output directory exists
+        run: mkdir -p profile-3d-contrib assets
 
-      - name: Generate 3D contribution image
+      - name: Generate 3D contributions image
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME:     ${{ github.repository_owner }}
+          USERNAME:     ${{ github.repository_owner }}    # repositori harus <owner>/<owner> :contentReference[oaicite:0]{index=0}
           THEME:        night-green
           CUBE_SIZE:    12
           CUBE_GAP:     2
@@ -35,18 +35,16 @@ jobs:
           WIDTH:        1024
           HEIGHT:       256
           FORMAT:       png
-          # Jika ingin path kustom, definisikan lewat JSON seperti sample-settings/green.dual.json
-          # SETTING_JSON: sample-settings/my-settings.json
 
-      - name: Move output to assets (opsional)
+      - name: Move generated image if exists
         run: |
           mkdir -p assets
-          mv profile-3d-contrib/*.png assets/
+          mv profile-3d-contrib/*.png assets/ 2>/dev/null || echo "No image to move"
 
-      - name: Debug listing
+      - name: List assets folder
         run: |
-          echo "=== Listing profile-3d-contrib and assets folders ==="
-          ls -R profile-3d-contrib assets
+          echo "=== Contents of assets/ ==="
+          ls -la assets
 
       - name: Commit & Push changes
         run: |
