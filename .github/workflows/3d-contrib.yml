@@ -3,8 +3,11 @@ name: Generate 3D Contributions
 on:
   schedule:
     # setiap hari pukul 12:48 WIB → 05:48 UTC
-    - cron: '12 6 * * *'
+    - cron: '16 6 * * *'
   workflow_dispatch:
+
+permissions:
+  contents: write  # perlu agar Action bisa commit file ke repo
 
 jobs:
   build:
@@ -12,30 +15,30 @@ jobs:
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Ensure assets folder exists
         run: mkdir -p assets
 
       - name: Generate 3D contributions image
-        uses: liilr/github-profile-3d-contrib@main
+        uses: yoshi389111/github-profile-3d-contrib@0.9.0
         with:
-          username: ${{ github.actor }}
-          output: assets/3d-contrib.png
-          theme: night-green
-          cube-size: 12
-          cube-gap: 2
-          rotate-x: 60
-          rotate-y: 30
-          width: 1024
-          height: 256
-          format: png
-          # Jika Action mendukung cache-seconds:
-          # cache-seconds: 3600
+          # token harus diset lewat env
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME:     ${{ github.repository_owner }}
+          OUTPUT:       assets/3d-contrib.png
+          THEME:        night-green
+          CUBE_SIZE:    12
+          CUBE_GAP:     2
+          ROTATE_X:     60
+          ROTATE_Y:     30
+          WIDTH:        1024
+          HEIGHT:       256
+          FORMAT:       png
 
-      - name: Commit generated image
+      - name: Commit & Push generated image
         run: |
-          git config user.name "github-actions[bot]"
+          git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add assets/3d-contrib.png
           git commit -m "chore: update 3D contributions image" || echo "No changes to commit"
