@@ -3,7 +3,7 @@ name: Generate 3D Contributions
 on:
   schedule:
     # setiap hari pukul 12:48 WIB → 05:48 UTC
-    - cron: '05 6 * * *'
+    - cron: '12 6 * * *'
   workflow_dispatch:
 
 jobs:
@@ -18,7 +18,7 @@ jobs:
         run: mkdir -p assets
 
       - name: Generate 3D contributions image
-        uses: liilr/github-profile-3d-contrib@v1
+        uses: liilr/github-profile-3d-contrib@main
         with:
           username: ${{ github.actor }}
           output: assets/3d-contrib.png
