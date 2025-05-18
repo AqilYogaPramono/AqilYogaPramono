@@ -22,10 +22,7 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 ## GitHub Overview
 
 <p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api?username=AqilYogaPramono&show_icons=true&show_all_commits=true&count_private=true&theme=dark&hide_border=false"
-    alt="GitHub Stats"
-  />
+<img src="https://github-readme-stats.vercel.app/api?username=AqilYogaPramono&show_icons=true&show=stars,commits,prs,prs_merged,prs_merged_percentage,issues,discussions_started,discussions_answered&theme=dark&hide_border=false" alt="GitHub Stats" />
 </p>
 
 ---
