@@ -58,13 +58,14 @@ Here are some of my key repositories:
       API to app mobile ResepKita
     </td>
   </tr>
-  <tr align="center">
+  <tr>
     <td align="center">
       <a href="https://github.com/AqilYogaPramono/ResepKita-AI">
         <img src="https://img.shields.io/badge/ResepKita-AI-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
       </a>
       API to get recommendation recipe from input food material
     </td>
+    <td></td>
   </tr>
 </table>
 </div>
