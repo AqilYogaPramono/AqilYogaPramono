@@ -1,8 +1,8 @@
-name: Generate 3D Contributions
+name: GitHub-Profile-3D-Contrib
 
 on:
   schedule:
-    # Setiap hari pukul 12:48 WIB → 05:48 UTC
+    # 12:48 WIB → 05:48 UTC
     - cron: '48 5 * * *'
   workflow_dispatch:
 
@@ -11,23 +11,22 @@ permissions:
 
 jobs:
   build:
+    runs-on: ubuntu-latest
     permissions:
       contents: write
-    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Ensure assets folder exists
-        run: mkdir -p assets
+      - name: Ensure asset directory exists
+        run: mkdir -p profile-3d-contrib
 
-      - name: Generate 3D contributions image
+      - name: Generate 3D contribution image
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME:     AqilYogaPramono
-          OUTPUT:       assets/
+          USERNAME:     ${{ github.repository_owner }}
           THEME:        night-green
           CUBE_SIZE:    12
           CUBE_GAP:     2
@@ -36,16 +35,23 @@ jobs:
           WIDTH:        1024
           HEIGHT:       256
           FORMAT:       png
+          # Jika ingin path kustom, definisikan lewat JSON seperti sample-settings/green.dual.json
+          # SETTING_JSON: sample-settings/my-settings.json
 
-      - name: Debug list assets folder
+      - name: Move output to assets (opsional)
         run: |
-          echo "=== Listing assets folder ==="
-          ls -la assets
+          mkdir -p assets
+          mv profile-3d-contrib/*.png assets/
 
-      - name: Commit & Push generated image
+      - name: Debug listing
+        run: |
+          echo "=== Listing profile-3d-contrib and assets folders ==="
+          ls -R profile-3d-contrib assets
+
+      - name: Commit & Push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/3d-contrib.png
+          git add -A .
           git commit -m "chore: update 3D contributions image" || echo "No changes to commit"
           git push
