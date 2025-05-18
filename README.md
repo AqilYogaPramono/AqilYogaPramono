@@ -21,7 +21,9 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 
 ## GitHub Overview
 
-![Anurag’s GitHub stats](https://github-readme-stats.vercel.app/api?username=AqilYogaPramono&show_icons=true&theme=dark)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=AqilYogaPramono&show_icons=true&show_all_commits=true&count_private=true&theme=dark&hide_border=false" alt="GitHub Stats" />
+</p>
 
 ---
 
@@ -38,43 +40,24 @@ Here are some of my key repositories:
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/orzkratos">
-        <img src="https://img.shields.io/badge/orzkratos-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
+      <a href="https://github.com/AqilYogaPramono/LuLuSin-API">
+        <img src="https://img.shields.io/badge/Lulusin-API-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
       </a>
-      **orzkratos**  
-      A Go assertion & crash‑handling enhancer.
+      API To make tryout like SNBT
     </td>
     <td align="center">
-      <a href="https://github.com/go-xlan">
-        <img src="https://img.shields.io/badge/go+xlan-%23DC143C.svg?style=flat&logo=github" height="40"/><br/>
+      <a href="https://github.com/AqilYogaPramono/ResepKita-API">
+        <img src="https://img.shields.io/badge/ResepKita-API-%23DC143C.svg?style=flat&logo=github" height="40"/><br/>
       </a>
-      **go‑xlan**  
-      Simplifies Go error panics with clear assertions.
+      API to app mobile ResepKita
     </td>
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/go-mate">
-        <img src="https://img.shields.io/badge/go+mate-%23F7931E.svg?style=flat&logo=github" height="40"/><br/>
-      </a>
-      **go‑mate**  
-      A utility for… (deskripsi singkat).
-    </td>
-    <td align="center">
-      <a href="https://github.com/go-legs">
-        <img src="https://img.shields.io/badge/go+legs-%2320B2AA.svg?style=flat&logo=github" height="40"/><br/>
-      </a>
-      **go‑legs**  
-      A tool that… (deskripsi singkat).
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/go-zwbc">
+      <a href="https://github.com/AqilYogaPramono/ResepKita-AI">
         <img src="https://img.shields.io/badge/go+zwbc-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
       </a>
-      **go‑zwbc**  
-      Simplifies BTC/DOGE transaction signing.
+      API to get rocomendation recipe from input food material
     </td>
     <td></td>
   </tr>
