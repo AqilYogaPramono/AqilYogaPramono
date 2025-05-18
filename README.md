@@ -30,10 +30,9 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 ## Most Used Languages
 
 <p align="center">
-  <img
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=AqilYogaPramono&layout=compact&theme=dark&hide=Other"
-    alt="Most Used Languages"
-  />
+<img 
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=AqilYogaPramono&theme=dark&hide=cmake,swift,dart,other&langs_count=6"
+/>
 </p>
 
 ---
