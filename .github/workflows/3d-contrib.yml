@@ -2,31 +2,26 @@ name: Generate 3D Contributions
 
 on:
   schedule:
-    # setiap hari pukul 12:48 WIB → 05:48 UTC
-    - cron: '26 6 * * *'
+    - cron: '30 6 * * *'
   workflow_dispatch:
-
-permissions:
-  contents: write
 
 jobs:
   build:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Ensure assets folder exists
-        run: mkdir -p assets
+      - run: mkdir -p assets
+        name: Ensure assets folder exists
 
       - name: Generate 3D contributions image
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
-          # required by the action
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME:     ${{ github.repository_owner }}
-          # optional parameters
           OUTPUT:       assets/3d-contrib.png
           THEME:        night-green
           CUBE_SIZE:    12
@@ -36,6 +31,11 @@ jobs:
           WIDTH:        1024
           HEIGHT:       256
           FORMAT:       png
+
+      - name: Debug: list assets folder
+        run: |
+          echo "=== Listing assets folder ==="
+          ls -R assets
 
       - name: Commit & Push generated image
         run: |
