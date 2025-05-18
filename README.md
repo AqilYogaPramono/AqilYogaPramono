@@ -42,7 +42,7 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 
 Here are some of my key repositories:
 
-<p align="center">
+<div align="center">
 <table>
   <tr>
     <td align="center">
@@ -63,12 +63,12 @@ Here are some of my key repositories:
       <a href="https://github.com/AqilYogaPramono/ResepKita-AI">
         <img src="https://img.shields.io/badge/ResepKita-AI-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
       </a>
-      API to get rocomendation recipe from input food material
+      API to get recommendation recipe from input food material
     </td>
     <td></td>
   </tr>
 </table>
-</p>
+</div>
 
 ---
 
