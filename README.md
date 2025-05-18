@@ -83,7 +83,7 @@ Here are some of my key repositories:
 ## Contributions in the Last Year
 
 <p align="center">
-  <img src="profile-3d-contrib/profile-night-green.svg" alt="3D contributions graph" />
+  <img src="profile-3d-contrib/profile-green-animate.svg" alt="3D contributions graph" />
 </p>
 
 ---
