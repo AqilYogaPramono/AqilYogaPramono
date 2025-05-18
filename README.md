@@ -65,7 +65,6 @@ Here are some of my key repositories:
       </a>
       API to get recommendation recipe from input food material
     </td>
-    <td></td>
   </tr>
 </table>
 </div>
