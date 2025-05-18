@@ -3,7 +3,7 @@ name: Generate 3D Contributions
 on:
   schedule:
     # setiap hari pukul 12:48 WIB → 05:48 UTC
-    - cron: '52 5 * * *'
+    - cron: '58 5 * * *'
   workflow_dispatch:
 
 jobs:
@@ -14,27 +14,24 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
+      - name: Ensure assets folder exists
+        run: mkdir -p assets
+
       - name: Generate 3D contributions image
         uses: liilr/github-profile-3d-contrib@v1
         with:
-          # username GitHub-mu
           username: ${{ github.actor }}
-          # output file path, relatif terhadap root repo
           output: assets/3d-contrib.png
-          # pilihan tema, misal: night, forest, red, blue, dll.
           theme: night-green
-          # ukuran kubus (pixel)
           cube-size: 12
-          # jarak antar kubus
           cube-gap: 2
-          # rotasi sudut (derajat) untuk view 3D
           rotate-x: 60
           rotate-y: 30
-          # resolusi output (lebar x tinggi)
           width: 1024
           height: 256
-          # format: png atau jpg
           format: png
+          # Jika Action mendukung cache-seconds:
+          # cache-seconds: 3600
 
       - name: Commit generated image
         run: |
