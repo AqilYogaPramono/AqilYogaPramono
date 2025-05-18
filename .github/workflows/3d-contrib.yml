@@ -44,7 +44,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          # Ambil semua SVG di profile-3d-contrib dan commit
-          git add profile-3d-contrib/*.svg
-          git commit -m "chore: update 3D contributions SVG (night-green)" || echo "No changes to commit"
+          git add profile-3d-contrib/profile-night-green.svg
+          git commit -m "chore: update 3D contributions SVG (night-green only)" || echo "No changes to commit"
           git push
