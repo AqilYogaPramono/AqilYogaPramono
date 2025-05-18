@@ -3,7 +3,7 @@ name: Generate 3D Contributions
 on:
   schedule:
     # setiap hari pukul 12:48 WIB → 05:48 UTC
-    - cron: '20 6 * * *'
+    - cron: '26 6 * * *'
   workflow_dispatch:
 
 permissions:
