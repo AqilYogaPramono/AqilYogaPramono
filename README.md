@@ -31,7 +31,7 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 
 <p align="center">
 <img 
-  src="https://github-readme-stats.vercel.app/api/top-langs/?username=AqilYogaPramono&theme=dark&hide=cmake,swift,dart,other&langs_count=6"
+  src="https://github-readme-stats.vercel.app/api/top-langs/?username=AqilYogaPramono&theme=dark&hide=other"
 />
 </p>
 
