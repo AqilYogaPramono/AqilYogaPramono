@@ -2,8 +2,8 @@ name: Generate 3D Contributions
 
 on:
   schedule:
-    # setiap hari pukul 12:48 WIB → 05:48 UTC
-    - cron: '34 6 * * *'
+    # Setiap hari pukul 12:48 WIB → 05:48 UTC
+    - cron: '48 5 * * *'
   workflow_dispatch:
 
 permissions:
@@ -26,7 +26,7 @@ jobs:
         uses: yoshi389111/github-profile-3d-contrib@latest
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME:     ${{ github.repository_owner }}
+          USERNAME:     AqilYogaPramono
           OUTPUT:       assets/3d-contrib.png
           THEME:        night-green
           CUBE_SIZE:    12
@@ -36,6 +36,11 @@ jobs:
           WIDTH:        1024
           HEIGHT:       256
           FORMAT:       png
+
+      - name: Debug list assets folder
+        run: |
+          echo "=== Listing assets folder ==="
+          ls -la assets
 
       - name: Commit & Push generated image
         run: |
