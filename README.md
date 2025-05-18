@@ -29,7 +29,12 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 
 ## Most Used Languages
 
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AqilYogaPramono&layout=compact&theme=dark)
+<p align="center">
+  <img
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=AqilYogaPramono&layout=compact&theme=dark&hide=Other"
+    alt="Top Languages"
+  />
+</p>
 
 ---
 
@@ -55,7 +60,7 @@ Here are some of my key repositories:
   <tr>
     <td align="center">
       <a href="https://github.com/AqilYogaPramono/ResepKita-AI">
-        <img src="https://img.shields.io/badge/go+zwbc-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
+        <img src="https://img.shields.io/badge/ResepKita-AI-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
       </a>
       API to get rocomendation recipe from input food material
     </td>
