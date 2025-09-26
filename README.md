@@ -38,40 +38,6 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 
 ---
 
-## My Projects
-
-Here are some of my key repositories:
-
-<div align="center">
-<table>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/AqilYogaPramono/LuLuSin-API">
-        <img src="https://img.shields.io/badge/Lulusin-API-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
-      </a>
-      API To make tryout like SNBT
-    </td>
-    <td align="center">
-      <a href="https://github.com/AqilYogaPramono/ResepKita-API">
-        <img src="https://img.shields.io/badge/ResepKita-API-%23DC143C.svg?style=flat&logo=github" height="40"/><br/>
-      </a>
-      API to app mobile ResepKita
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <a href="https://github.com/AqilYogaPramono/ResepKita-AI">
-        <img src="https://img.shields.io/badge/ResepKita-AI-%23FFD700.svg?style=flat&logo=github" height="40"/><br/>
-      </a>
-      API to get recommendation recipe from input food material
-    </td>
-    <td></td>
-  </tr>
-</table>
-</div>
-
----
-
 ## Contribution Activity
 
 <p align="center">
