@@ -41,7 +41,7 @@ I am **Aqil Yoga Pramono**, a **student** of Informatics Engineering at Electron
 ## Contribution Activity
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=AqilYogaPramono&theme=dark&hide_border=false" alt="GitHub Streak Stats" />
+  <img src="https://streak-stats.demolab.com/?user=AqilYogaPramono&theme=dark&hide_border=false" />
 </p>
 
 ---
