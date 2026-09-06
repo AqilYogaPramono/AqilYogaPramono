@@ -1,6 +1,6 @@
 # Hi there 👋
 
-I am **Aqil Yoga Pramono**, a D3 Informatics Engineering graduate from the Electronic Engineering Polytechnic Institute of Surabaya (EEPIS/PENS). I am highly enthusiastic about kickstarting my professional career and am currently seeking opportunities to contribute as a **Full-Stack or Back-End Developer Intern** through the **Magang Hub** program, where I can apply my technical expertise and grow within industry-scale projects.
+I am **Aqil Yoga Pramono**, a D3 Informatics Engineering graduate from the Electronic Engineering Polytechnic Institute of Surabaya.
 
 ---
 
