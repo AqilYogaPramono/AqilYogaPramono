@@ -5,7 +5,7 @@ I am **Aqil Yoga Pramono**, a D3 Informatics Engineering graduate from the Elect
 ---
 
 <p align="center">
-  <strong>English</strong> | <a href="languageSkill/README.ID.md">Bahasa Indonesia</a>
+  <strong>English</strong> | <a href="language/README.ID.md">Bahasa Indonesia</a>
 </p>
 
 ---
